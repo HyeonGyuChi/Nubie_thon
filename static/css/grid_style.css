@@ -1,0 +1,15 @@
+.wrapper{
+	display: grid;
+	grid-template-columns:200px 100px 100px 100px 100px 100px;
+	grid-template-rows: 30px 50px 50px 50px 50px 50px 50px 50px 50px 50px; 
+	grid-column-gap: 5px;
+}
+
+.time{
+	text-align: center;
+}
+.day{
+	text-align: center;
+    font-size: 20px;
+}
+

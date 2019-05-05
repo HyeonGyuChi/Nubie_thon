@@ -1,0 +1,84 @@
+<head>
+    <title>Teaming :: {{project.id}}</title>
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Fredoka+One|Quicksand" rel="stylesheet">
+
+        <style type="text/css">
+            body{
+                margin: 0px;
+                padding: 0px;
+                text-align: center;
+                font-family:  'Quicksand', sans-serif,Muli,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';padding-top:54px;color:#868e96
+            }
+        
+        
+        @media (min-width:992px)
+        {
+            body{padding-top:0;}
+        }
+        h1,h2,h3,h4,h5,h6,.btn{
+                font-family:'Fredoka One','Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+                font-weight:250;
+                text-transform:uppercase;
+                color:#8785a2;}
+            
+        h1{
+           padding-top : 2rem;  
+            margin : 3rem 15rem;
+            font-size:4rem;
+            line-height:5.5rem;
+            color: #a8d8ea;
+            border-bottom : 2px dotted #a8d8ea;
+            
+        }
+        h2{font-size:3.5rem}
+        h3{font-size:2rem
+            color: ;}
+            p.lead{font-size:1.15rem;font-weight:400}
+            .subheading{
+                text-transform:uppercase;
+                font-weight:500;
+                font-family:'Caveat', cursive,'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+                font-size:1.5rem
+            }
+            #btn{
+                color:#95e1d3;
+                width: 100%; 
+            }
+            </style>
+</head>
+
+<h1>
+    Team {{project.id}}'s Editing Page!
+</h1>
+
+<!-- <form action="{%url 'update' project.id %}">        
+    <h4>팀명: </h4>        
+    <input type="text" name='title', value="{{project.title}}">        
+    <br>        <br>        
+    <h4>팀 설명: </h4>        
+    <textarea name="body" cols="40" rows="10">{{project.body}} </textarea>        
+    <br>        <br>        
+    <input type="submit" value="제출하기">    
+</form> -->
+
+<form action="{% url 'update' project.id %}">    
+    <h4>Team name : </h4>    
+    <input type="text" name='title' value="{{project.title}}">
+    <br><br> 
+    <h4>About your team : </h4>    
+    <textarea name="body" cols="40" rows="10">{{project.body}} </textarea>    
+    <br><br>
+    <h4>Team Leader: </h4>
+    <input type="text" name='leader' value="{{project.leader}}">    
+    <br><br>
+    <h4>Team members: </h4> 
+    <input type="text" name='team01' value="{{project.team01}}">
+    <input type="text" name='team02' value="{{project.team02}}">
+    <input type="text" name='team03' value="{{project.team03}}">   
+    <br><br>    
+    <div class="btn">    
+        <input type="submit" value="Submit" style="font-family:'Fredoka One','Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';font-size:130%;color:#f6f6f6; background-color:#49beb7 ;border-style:none; font-weight:200; width:8rem; height:3rem"> 
+    
+    </div> 
+
+</form>

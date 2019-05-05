@@ -1,0 +1,79 @@
+
+<head>
+    <title>Teaming :: {{project.id}}</title>
+<link href="https://fonts.googleapis.com/css?family=Caveat|Fredoka+One|Quicksand|Gaegu" rel="stylesheet">
+
+        <style type="text/css">
+            body{
+                margin: 0px;
+                padding: 0px;
+                text-align: center;
+                font-family:  'Quicksand', sans-serif,Muli,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';padding-top:54px;color:#868e96
+            }
+        
+        
+        @media (min-width:992px)
+        {
+            body{padding-top:0;}
+        }
+        h1,h2,h3,h4,h5,h6,.btn{
+                font-family:'Fredoka One','Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+                font-weight:250;
+                text-transform:uppercase;
+                color:#8785a2;}
+            
+        h1{
+            padding-top : 2rem;  
+            margin : 3rem 15rem;
+            font-size:4rem;
+            line-height:5.5rem;
+            color: #a8d8ea;
+            border-bottom : 2px dotted #a8d8ea;
+            
+        }
+        h2{font-size:2em}
+        h3{font-size:2rem
+            color: ;}
+            p.lead{font-size:1.15rem;font-weight:400}
+            .subheading{
+                text-transform:uppercase;
+                font-weight:500;
+                font-family:'Caveat', cursive,'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+                font-size:1.5rem
+            }
+            #btn{
+                color:#95e1d3;
+                width: 100%; 
+            }
+            </style>
+</head>
+<body>
+
+    <h1>
+        TEAM "{{project.id}}"'s Information Page!
+    </h1>
+    <div style="font-family:'Gaegu', cursive; font-size: 1.3rem;" >
+    <h2>Title: {{ project.title }}</h2>
+    <p>Date: {{ project.pub_date }}</p>
+    <p>{{ project.body }}</p>
+   
+        
+        <p>{{ project.leader }}</p>
+        <p >Team members : {{ project.team01 }}, {{ project.team02 }}, {{ project.team03 }}</p>
+     <!--</div>
+       <div style="font-family:'Fredoka One','Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';text-align:center;font-size:130%; color:#f6f6f6; background-color:#49beb7 ;border-style:none; font-weight:200; width:8rem; height:2.5rem">
+           <a href="main" >Back</a>
+        </div> 
+    -->
+    <div class="btn">  
+        <br>
+        <a href="{%url 'main'%}" style="font-family:'Fredoka One','Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';font-size:130%;color:#49beb7; background-color:none ;border-style:none; text-decoration:none;font-weight:70; width:aut; height:5em"> Back </a>
+    
+    </div>
+    
+    
+    </div>
+    
+
+    
+</body>
